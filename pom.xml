@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.simplilearn.webservice</groupId>
 	<artifactId>phase3-ecommerce-webservice-producer-09-12-2021</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>phase3-ecommerce-webservice-producer-09-12-2021</name>
 	<description>Webservice project for Spring Boot</description>
 	<properties>
@@ -46,6 +46,11 @@
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		
 	</dependencies>

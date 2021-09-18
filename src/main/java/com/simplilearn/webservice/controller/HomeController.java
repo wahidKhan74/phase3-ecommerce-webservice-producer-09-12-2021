@@ -24,10 +24,15 @@ public class HomeController {
 		return "Hi, '"+name+"' welcome to webservice learning !";
 	}
 	
-	// request path variable
-	@GetMapping("/user/{userId}")
-	public String userMapping(@PathVariable(value ="userId") String userId) {
-		return "Hi, user , your userId is '"+userId +"' & your welcome to webservice learning !";
+	@GetMapping("/user")
+	public String userMapping() {
+		return "<h1> Welcome Spring security - USER </h1>";
+	}
+	
+	
+	@GetMapping("/admin")
+	public String adminMapping() {
+		return "<h1> Welcome Spring security - ADMIN </h1>";
 	}
 	
 }
